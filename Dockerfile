@@ -6,6 +6,9 @@ RUN apt-get update && apt-get install -y  && \
     pip install neovim && \
     pip3 install neovim
 
+RUN add-apt-repository ppa:jonathonf/vim && \
+    apt update && apt install -y vim-nox
+
 RUN GOPATH=/root/go go get -u github.com/golang/lint/golint && \
     GOPATH=/root/go go get -u github.com/kardianos/govendor && \
     GOPATH=/root/go go get github.com/mitchellh/gox && \
