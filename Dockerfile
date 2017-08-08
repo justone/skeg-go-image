@@ -1,4 +1,4 @@
-FROM skegio/go:1.8
+FROM skegio/go:1.9
 
 RUN apt-get update && apt-get install -y  && \
     add-apt-repository ppa:neovim-ppa/unstable && \
