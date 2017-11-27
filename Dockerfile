@@ -27,5 +27,6 @@ RUN GOPATH=/root/go go get github.com/golang/lint/golint && \
     GOPATH=/root/go go get github.com/fatih/gomodifytags && \
     GOPATH=/root/go go get github.com/zmb3/gogetdoc && \
     GOPATH=/root/go go get github.com/josharian/impl && \
+    GOPATH=/root/go go get golang.org/x/tools/cmd/godoc && \
     cp -a /root/go/bin/* /usr/bin && \
     rm -rf /root/go
