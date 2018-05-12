@@ -13,20 +13,23 @@ RUN add-apt-repository ppa:jonathonf/vim && \
 RUN GOPATH=/root/go go get github.com/golang/lint/golint && \
     GOPATH=/root/go go get github.com/kardianos/govendor && \
     GOPATH=/root/go go get github.com/mitchellh/gox && \
-    GOPATH=/root/go go get github.com/nsf/gocode && \
-    GOPATH=/root/go go get github.com/alecthomas/gometalinter && \
-    GOPATH=/root/go go get golang.org/x/tools/cmd/goimports && \
-    GOPATH=/root/go go get golang.org/x/tools/cmd/guru && \
-    GOPATH=/root/go go get golang.org/x/tools/cmd/gorename && \
-    GOPATH=/root/go go get github.com/golang/lint/golint && \
-    GOPATH=/root/go go get github.com/rogpeppe/godef && \
-    GOPATH=/root/go go get github.com/kisielk/errcheck && \
-    GOPATH=/root/go go get github.com/jstemmer/gotags && \
     GOPATH=/root/go go get github.com/klauspost/asmfmt/cmd/asmfmt && \
-    GOPATH=/root/go go get github.com/fatih/motion && \
-    GOPATH=/root/go go get github.com/fatih/gomodifytags && \
+    GOPATH=/root/go go get github.com/derekparker/delve/cmd/dlv && \
+    GOPATH=/root/go go get github.com/kisielk/errcheck && \
+    GOPATH=/root/go go get github.com/davidrjenni/reftools/cmd/fillstruct && \
+    GOPATH=/root/go go get github.com/mdempsky/gocode && \
+    GOPATH=/root/go go get github.com/rogpeppe/godef && \
     GOPATH=/root/go go get github.com/zmb3/gogetdoc && \
+    GOPATH=/root/go go get golang.org/x/tools/cmd/goimports && \
+    GOPATH=/root/go go get github.com/golang/lint/golint && \
+    GOPATH=/root/go go get github.com/alecthomas/gometalinter && \
+    GOPATH=/root/go go get github.com/fatih/gomodifytags && \
+    GOPATH=/root/go go get golang.org/x/tools/cmd/gorename && \
+    GOPATH=/root/go go get github.com/jstemmer/gotags && \
+    GOPATH=/root/go go get golang.org/x/tools/cmd/guru && \
     GOPATH=/root/go go get github.com/josharian/impl && \
+    GOPATH=/root/go go get github.com/dominikh/go-tools/cmd/keyify && \
+    GOPATH=/root/go go get github.com/fatih/motion && \
     GOPATH=/root/go go get golang.org/x/tools/cmd/godoc && \
     cp -a /root/go/bin/* /usr/bin && \
     rm -rf /root/go
